@@ -1,0 +1,12 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  session:
+    invalid_login: "Invalid email/password. Please try again"
+    logged_in: "You're logged in"
+    logged_out: "You have logged out"
+    login_prompt: "Please log in to continue"
+  upload:
+    gross_revenue: "The gross revenue from the file you uploaded is %{number}"
+    invalid: "Please try again"

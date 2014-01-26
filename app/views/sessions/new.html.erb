@@ -1,0 +1,23 @@
+<%= form_tag sessions_path do %>
+  <% if !alert.nil? %>
+    <div class="alert alert-info">
+      <%= flash[:alert] %>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <label for="email">Email:</label>
+    <div class="input">
+      <%= text_field_tag :email, nil, :autofocus => true, :autocomplete => 'off' %>
+    </div>
+  </div>
+  <div class="field">
+    <label for="password">Password:</label>
+    <div class="input">
+      <%= password_field_tag :password, nil, :autocomplete => 'off' %>
+    </div>
+  </div>
+  <div class="field">
+    <%= submit_tag 'Log In', class: "btn btn-default" %>
+  </div>
+<% end %>

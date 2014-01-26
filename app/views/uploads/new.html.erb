@@ -1,0 +1,18 @@
+<%= form_tag uploads_path, multipart: true do %>
+  <% if !alert.nil? %>
+    <div class="alert alert-info">
+      <%= flash[:alert] %>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <label for="email">File:</label>
+    <div class="input">
+      <%= file_field_tag :file %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= submit_tag 'Submit', class: "btn" %>
+  </div>
+<% end %>
