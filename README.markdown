@@ -2,10 +2,8 @@
 
 There is a `seeds.rb` file that creates a test user. Credentials are as follows:
 
-```
-**Email:** test@testing.com
-**Password:** password
-```
+    **Email:** test@testing.com
+    **Password:** password
 
 To be able to login, the following should be adequate for setup:
 
